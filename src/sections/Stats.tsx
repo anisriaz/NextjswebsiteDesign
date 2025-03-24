@@ -7,7 +7,7 @@ const stats = [
   { icon: <Smile size={40} />, value: 99, suffix: "%", label: "Happy Clients" },
   { icon: <Heart size={40} />, value: 3500, suffix: "+", label: "Love Problems Consultation" },
   { icon: <Heart size={40} />, value: 10000, suffix: "+", label: "Love Marriage Consultation" },
-  { icon: <Clock size={40} />, value: "24×7", label: "Live Support" },
+  { icon: <Clock size={40} />, value: "24x7", label: "Live Support" },
 ];
 
 export const StatsSection = () => {
@@ -22,10 +22,14 @@ export const StatsSection = () => {
           >
             {stat.icon}
             <motion.h2 className="text-3xl font-bold">
-              <CountUp end={typeof stat.value === "number" ? stat.value : 0} duration={2} />{stat.suffix}
+              {typeof stat.value === 'number' ? (
+                <CountUp end={stat.value} duration={2} />
+              ) : (
+                stat.value
+              )}
+              {stat.suffix}
             </motion.h2>
-            <p className="text-lg">{stat.label}</p>
-          </motion.div>
+            </motion.div>
         ))}
       </div>
     </div>
