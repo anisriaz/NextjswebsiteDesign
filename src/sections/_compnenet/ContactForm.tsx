@@ -59,7 +59,7 @@ export const ContactForm = () => {
                   <textarea
                     name="message"
                     className="w-full p-2 border rounded-md"
-                    placeholder="Hello, we contacted you for a job opportunity"
+                    placeholder="Hello, we contacted you for a help"
                     rows={4}
                     required
                   />

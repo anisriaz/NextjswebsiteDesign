@@ -15,7 +15,7 @@ export const CircularHero = () => {
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-900 via-indigo-900 to-purple-900 animate-gradient">
       {/* Outer Circle with Glass Morphism */}
       <motion.div 
-        className="relative w-96 h-96 flex flex-col items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl text-center p-10"
+        className="relative w-96 h-96 flex flex-col items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl text-center p-4"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
