@@ -65,7 +65,7 @@ export const Astrologer = () => {
                   alt={service.title}
                   width={500}
                   height={192}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover" 
                 />
                 <div className="p-6">
                   <h2 className="text-xl font-bold text-gray-900">{service.title}</h2>

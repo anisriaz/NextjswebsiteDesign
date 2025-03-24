@@ -61,7 +61,7 @@ export const Vedic = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="relative">
-            <Image
+            <Image 
                 src={service.image.src}
                 alt={service.title}
                 width={500}
