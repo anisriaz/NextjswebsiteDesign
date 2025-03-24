@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">Welcome To SRI SAI BALAJI JYOTISHYLAYAM</p>
         <div className="inline-flex gap-1 items-center">
-          <p>Learn with us</p>
+          <p>Share with us</p>
         </div>
       </div>
       <div className="py-5">
