@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import cardImage from "@/assets/images.jpeg";
 
 const services = [
@@ -56,16 +57,20 @@ export const Astrologer = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white shadow-xl rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-            >
-              <img
-                src={service.image.src}
-                alt={service.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-900">{service.title}</h2>
-                <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+                className="bg-white shadow-xl rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div>
+                <Image
+                  src={service.image.src}
+                  alt={service.title}
+                  width={500}
+                  height={192}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-bold text-gray-900">{service.title}</h2>
+                  <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+                </div>
               </div>
             </div>
           ))}

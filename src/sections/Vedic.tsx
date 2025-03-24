@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Star, Clock, Phone } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import cardImage from "@/assets/Images.jpeg";
 
@@ -60,9 +61,11 @@ export const Vedic = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="relative">
-            <img
+            <Image
                 src={service.image.src}
                 alt={service.title}
+                width={500}
+                height={300}
                 className="w-full h-48 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-end p-4">
