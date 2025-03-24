@@ -3,7 +3,7 @@ import React from "react";
 import { Star, Clock, Phone } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import cardImage from "@/assets/Images.jpeg";
+import cardImage from "@/assets/hero.png";
 
 const services = [
   {
