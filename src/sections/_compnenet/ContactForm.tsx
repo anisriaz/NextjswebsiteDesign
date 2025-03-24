@@ -31,7 +31,7 @@ export const ContactForm = () => {
               className="font-semibold bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-4 px-6 rounded-3xl text-center
                 relative overflow-hidden z-0 inset-0"
             >
-              Contact Me
+              Contact Us
             </DialogTitle>
             <DialogDescription>
               <form 
