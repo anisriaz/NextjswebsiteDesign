@@ -62,7 +62,7 @@ export const Vedic = () => {
           >
             <div className="relative">
             <Image 
-                src={service.image.src}
+                src={service.image}
                 alt={service.title}
                 width={500}
                 height={300}
