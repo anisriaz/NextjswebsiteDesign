@@ -37,9 +37,8 @@ const services = [
 
 export const Astrologer = () => {
   return (
-    <div>
-      {/* Heading Section with Half White/Silver Gradient */}
-      <div className="bg-indigo-100 py-16 px-6 text-center">
+    <>
+      <div id="Expertise" className="bg-indigo-100 py-16 px-6 text-center">
         <h1 className="font-bold text-4xl lg:text-5xl text-gray-900">
           Astrologer Nearby Me - Online Astrology Consultation
         </h1>
@@ -76,6 +75,6 @@ export const Astrologer = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };

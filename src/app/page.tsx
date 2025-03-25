@@ -9,6 +9,7 @@ import { CircularHero } from "@/sections/Consult";
 import { Footer } from "@/sections/Footer";
 
 
+
 export default function Home() {
   return (
       <>

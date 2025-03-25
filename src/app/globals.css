@@ -19,6 +19,7 @@
   }
 }
 
+
 :root {
 
   --radius: 0.625rem;
@@ -260,4 +261,10 @@
 
 .animate-marquee-left-to-right {
   animation: marquee-left-to-right 15s linear infinite;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
 }

@@ -53,10 +53,10 @@ const services = [
 ];
 
 
-export const Services = () => {
+export default function Services() {
   return (
     <>
-    <div id="Services" className="text-center">
+    <div id="Services" className="text-center"> 
     <h1 className="font-bold text-4xl text-violet-400 items-center justify-center mt-12 bg-[#EAEEFE_100%]">Personal Problems Solutions</h1>
     <h1 className="text-gray-500 mt-4 mb-12">Unlock the mysteries of your life path with our comprehensive astrological services</h1>
     </div>
