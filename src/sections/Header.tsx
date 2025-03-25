@@ -76,9 +76,18 @@ export const Header = () => {
 
         {/* Mobile Navigation - Centered and Adjusted Width */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-[100%] left-0 w-full bg-white shadow-md rounded-lg mt-2 p-4">
+          <div className="md:hidden absolute top-[100%] left-0 w-full bg-white backdrop-blur-lg shadow-md rounded-lg mt-2 p-4">
             <nav className="flex flex-col gap-4 text-black/60 items-center">
               {links.map(({ id, label }) => (
+                id === "Booking" ? (
+                  <button
+                    key={id}
+                    onClick={() => handleScroll(id)}
+                    className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight cursor-pointer"
+                  >
+                    {label}
+                  </button>
+                ) :
                 <button
                   key={id}
                   className="px-4 py-2 hover:bg-gray-100 rounded w-full text-lg"
