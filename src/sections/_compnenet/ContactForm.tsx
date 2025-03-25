@@ -15,7 +15,7 @@ export const ContactForm = () => {
   return (
     <div>
       <button onClick={() =>{setOpen(true)} }>Contact Us</button>
-      <Dialog open={open} onOpenChange={() => setOpen(false)}>
+      <Dialog  open={open} onOpenChange={() => setOpen(false)}>
         <DialogContent
           className="bg-gray-800 after:z-10 after:content-[&apos;&apos;] after:absolute after:inset-0 after:outline after:-outline-offset-2 after:outline-white/20
              after:pointer-events-none"
