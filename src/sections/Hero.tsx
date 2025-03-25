@@ -14,11 +14,11 @@ export const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 lg:ml-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Text Content */}
-          <div className="md:w-[450px] order-1 md:order-none text-center md:text-left">
+          <div id="Booking" className="md:w-[450px] order-1 md:order-none text-center md:text-left">
             <div className="text-sm md:text-md inline-flex border border-[#222]/10 px-4 py-1 rounded-lg tracking-tight bg-white/20">
               South India Premier Astrologer
             </div>
-            <h1 id="Booking" className="text-3xl md:text-5xl font-bold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
               Discover Your Divine Path Through Ancient Wisdom
             </h1>
             <p className="text-lg md:text-xl text-[#010D3E] tracking-tight mt-6">

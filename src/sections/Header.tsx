@@ -76,13 +76,14 @@ export const Header = () => {
 
         {/* Mobile Navigation - Centered and Adjusted Width */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-[100%] left-0 w-full bg-white backdrop-blur-lg shadow-md rounded-lg mt-2 p-4">
+          <div className="fixed mt-4 right-1 bg-gray-700/90 hover:bg-gray-700/90 backdrop-blur-lg border border-gray-700/40 text-white rounded-sm w-50 h-44 flex items-center justify-center cursor-pointer shadow-md hover:shadow-lg transition-all duration-200 hover:scale-110">
             <nav className="flex flex-col gap-4 text-black/60 items-center">
               {links.map(({ id, label }) => (
                 id === "Booking" ? (
                   <button
                     key={id}
-                    onClick={() => handleScroll(id)}
+                    onClick={() => {handleScroll(id)
+                    setMobileMenuOpen(false)}}
                     className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight cursor-pointer"
                   >
                     {label}
@@ -90,7 +91,7 @@ export const Header = () => {
                 ) :
                 <button
                   key={id}
-                  className="px-4 py-2 hover:bg-gray-100 rounded w-full text-lg"
+                  className="px-4 py-2 text-white hover:bg-gray-100 rounded w-full text-lg"
                   onClick={() => {
                     setMobileMenuOpen(false);
                     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
